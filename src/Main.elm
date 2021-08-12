@@ -21,6 +21,12 @@ ask thing place =
 askPolitelyAboutFish : String -> String
 askPolitelyAboutFish = politely << (ask "fish") -- partial application
 
+{-
+render HTML:
+main =
+  text <| askPolitelyAboutFish "shop"
+-}
+
 ------------------------------------------------------------------------------------
 {- define types for your variables aka 'records' -}
 

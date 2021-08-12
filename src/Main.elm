@@ -21,5 +21,25 @@ ask thing place =
 askPolitelyAboutFish : String -> String
 askPolitelyAboutFish = politely << (ask "fish") -- partial application
 
+
+
+------------------------------------------------------------------------------------
+{- define types for your variables aka 'records' -}
+type alias Dog =
+    { name : String
+    , age : Int
+    }
+
+-- objcet syntax in Elm
+myDog = 
+    { name = "Spock"
+    , age = 3
+    }
+
+renderDog : Dog -> String
+renderDog dog = 
+    dog.name ++ ", " ++ (String.fromInt dog.age) -- String.fromInt === toString() in js
+
+
 main =
-  text <| askPolitelyAboutFish "shop"
+  text <| renderDog myDog

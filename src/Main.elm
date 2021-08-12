@@ -47,6 +47,10 @@ renderDog dog =
     ++ ", "
     ++ (String.fromInt dog.age) -- String.fromInt === toString() in js
 
-
+{-
 main =
   text <| renderDog myDog
+-}
+
+------------------------------------------------------------------------------------
+
